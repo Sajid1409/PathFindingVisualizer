@@ -1,0 +1,95 @@
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainHeading{
+    background-color: gray;
+    padding: 5px;
+    margin-bottom: 1vh;
+    margin-top: 0;
+    position: fixed;
+    height: auto;
+    width: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+}
+
+.gridSizeSlider, .visSpeedSlider{
+    display: grid;
+}
+/* #gridSizeVal, #visSpeedVal{
+    border: 1px solid black;
+} */
+
+#grid{
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 3px 3px;
+    margin: auto;
+}
+#controls{
+    width: 40vw;
+    padding: 50px;
+    margin-right: 10vw;
+    padding-bottom: 12px;
+    margin: auto;
+}
+#wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15vh;
+    align-content: center;
+}
+#dropdownButton{
+    padding-top: 12px;
+}
+.control-button{
+    border: none;
+    background-color: rgb(0, 140, 255);
+    padding: 5px;
+    color: white;
+}
+.control-button:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+#allButtons{
+    padding-top: 12px;
+}
+.box{
+    border: 1px solid black;
+}
+
+.box:hover{
+    background-color: lightslategray;
+    transform: scale(1.1);
+    transition: 200ms;
+}
+.wall{
+    background-color: brown;
+}
+.wall:hover{
+    background-color: brown;
+    transform: scale(1);
+}
+.animate{
+    animation: appear 1s;
+    background-color: #f4fd9e;
+}
+@keyframes appear{
+    0%{opacity: 0.5;transform: scale(0); border-radius: 50%;}
+    30%{opacity: 0.75;background-color: #ffeb35; }
+    100%{opacity: 1;background-color: #00ff95;transform: scale(1); border-radius: 0px;}
+}
+
+.path{
+    animation-timing-function: ease;
+    transition: 1s;
+    background-color: blueviolet;
+}

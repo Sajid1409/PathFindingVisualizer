@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="bfs.js"></script> -->
+    <script defer type="module" src="script.js"></script>
+    <title>Visualizer</title>
+</head>
+<body>
+    <nav class = "mainHeading">
+        <h1>Path Finding Visualizer</h1>
+    </nav>
+    <div id ="wrapper">
+        <div id = "controls">
+            <h3>Controls:</h3>
+            <!-- <button id="test">Click</button> -->
+            <div class="gridSizeSlider">
+                <span>Size: <span id="gridSizeVal"></span> </span>
+                <input id ="gridSize" type="range" min="4" max="40">
+            </div>
+            <div class="visSpeedSlider">
+                <span>Speed: <span id="visSpeedVal"></span> </span>
+                <input id ="visSpeed" type="range" min="1" max="5" step="0.5">
+            </div>
+            <div id="allButtons">
+                <button id="wall" class="control-button">Generate Wall</button>
+                <button id="reset" class="control-button">Reset</button>
+                <div id="dropdownButton">
+                    <span>Select Algorithm:</span>
+                    <button id="BFS" class="control-button">BFS</button>
+                    <button id="DFS" class="control-button">DFS</button>
+                    <button id="Dijkstra" class="control-button">Dijkstra</button>
+                    <button id="a-star" class="control-button">A-Star</button>
+                </div>
+            </div>
+        </div>
+        <div id = "grid"></div>
+    </div>
+</body>
+</html>
